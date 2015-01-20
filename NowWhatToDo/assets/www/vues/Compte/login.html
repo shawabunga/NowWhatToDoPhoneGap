@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Now What To Do">
+
+    <title>Now What To Do | Connexion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet" />  
+    
+    <!-- Custom styles for this template -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/style-responsive.css" rel="stylesheet">
+
+    <link href="../../css/general.css" type="text/css" rel="stylesheet"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+               
+	<div id="login-page">
+		<div class="container">
+			<form class="form-login" id="form_login">
+				<h2 class="form-login-heading">Connexion</h2>
+				<div class="login-wrap">
+					<div id="messageErreur"></div>					
+					<div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input id="inputLogin" type="text" class="form-control" name="identifiant" placeholder="Login" required  onblur="verifNom(this);"/>
+                        </div>
+                    </div>
+                         
+					<div class="form-group">
+						<div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" class="form-control" name="motDePasse" placeholder="Mot de Passe" required onblur="verifMdp(this);" />
+                        </div>
+					</div>					
+					<div class="form-group">
+						<button class="btn btn-theme btn-block" type="button" onclick="envoieFormulaire();"><i class="fa fa-lock"></i> Connexion</button>
+					</div>	
+					
+					<div class="registration">
+						<a class="btn btn-default" href="inscription.html">Créer un compte</a>
+					</div>
+					
+					<div class="form-group centered">
+						<label class="checkbox"><span><a data-toggle="modal" href="#myModal"> Mot de passe oublié?</a></span></label>
+					</div>
+				</div>
+
+				<!-- Modal -->
+				<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+<!-- 								<button type="button" class="close" data-dismiss="modal" -->
+<!-- 									aria-hidden="true">&times;</button> -->
+								<h4 class="modal-title">Mot de passe oublié ?</h4>
+							</div>
+							<div class="modal-body">
+								<p>Entrez votre adresse mail afin de recevoir un nouveau mot de
+									passe.</p>
+								<input type="text" name="email" placeholder="Email"
+									autocomplete="off" class="form-control placeholder-no-fix" />
+
+							</div>
+							<div class="modal-footer">
+								<button data-dismiss="modal" class="btn btn-default"
+									type="button">Annuler</button>
+								<button class="btn btn-theme" type="Submit">Envoyer</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- modal -->
+			</form>
+		</div>
+	</div>
+
+	<!-- js placed at the end of the document so the pages load faster -->
+	<script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-1.8.3.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="../../js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="../../js/jquery.scrollTo.min.js"></script>
+    <script src="../../js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="../../js/jquery.sparkline.js"></script>
+
+    <!--common script for all pages-->
+    <script src="../../js/common-scripts.js"></script>
+    
+	<!--Script ajouté  -->
+	<script src="../../js/script/verificationFonctionScript.js"></script>
+	<script src="../../js/script/loginScript.js"></script>	
+    <script type="text/javascript">
+    	//Focus par défault sur le champ input
+         window.onload = function () {
+             document.getElementById('inputLogin').focus();
+         };
+         
+         //Enleve le comportement par default de l'envoi du formulaire en get apres clic sur la touche entree
+         //et appelle la fonction pour envoyer le formulaire
+         $('#form_login').bind('keydown', function(e) {
+        	    if (e.keyCode == 13) {
+        	        e.preventDefault();
+        	        envoieFormulaire();
+        	    }
+        	});       
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+
+.couleurBlanche {
+	background: #ffffff;
+}
+
+.messageValidation {
+	color: green;
+}
+.messageErreur {
+	color: red;
+}
+
+.cache {
+	display : none;
+}
+
+.curseurMain {
+	cursor: pointer;
+}

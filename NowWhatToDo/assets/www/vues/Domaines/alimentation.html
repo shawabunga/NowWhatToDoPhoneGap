@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Now What To Do">
+
+    <title>Now What To Do | Alimentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="../../font-awesome/css/font-awesome.css" rel="stylesheet" />  
+    
+    <!-- Custom styles for this template -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/style-responsive.css" rel="stylesheet">
+
+    <link href="../../css/general.css" type="text/css" rel="stylesheet"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <section id="container">
+	  <!-- **********************************************************************************************************************************************************
+      TOP BAR CONTENT & NOTIFICATIONS
+      *********************************************************************************************************************************************************** -->
+      <!--header start-->
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Ouvrir menu"></div>
+              </div>
+              
+            <!--logo start-->
+            <a href="../accueil/accueil.html" class="logo"><b>Now What To Do</b></a>
+            <!--logo end-->
+            
+            <!-- Pour la connexion -->
+            <div id="connexionDeconnexion" class="top-menu">
+            </div>
+        </header>
+      <!--header end-->
+      
+      <!-- **********************************************************************************************************************************************************
+      MAIN SIDEBAR MENU
+      *********************************************************************************************************************************************************** -->
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu" id="nav-accordion">
+              	  <h5 class="centered">Menu</h5>
+              	  	
+                  <li class="mt">
+                      <a class="" href="../accueil/accueil.html">
+                          <i class="fa fa-home"></i>
+                          <span>Accueil</span>
+                      </a>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-book"></i>
+                          <span>Domaines</span>
+                          <i class="fa fa-chevron-down pull-right"></i>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="../Domaines/administration.html">Administration</a></li>
+                          <li><a href="../Domaines/alimentation.html">Alimentation</a></li>
+                          <li><a href="../Domaines/logement.html">Logement</a></li>
+                          <li><a href="../Domaines/loisir.html">Loisir</a></li>
+                          <li><a href="../Domaines/sante.html">Santé</a></li>
+                          <li><a href="../Domaines/services.html">Services</a></li>
+                          <li><a href="../Domaines/transport.html">Transport</a></li>
+                          <li><a href="../Domaines/travail.html">Travail</a></li>
+                      </ul>
+                  </li>    
+                  <li class="mt">
+                      <a class="" href="../Recherche/recherche.html">
+                          <i class="fa fa-search"></i>
+                          <span>Recherche</span>
+                      </a>
+                  </li>                 
+                  <li class="mt">
+                      <a class="curseurMain" onclick="cheatAppelCompteServlet();">
+                          <i class="fa fa-user"></i>
+                          <span>Compte</span>
+                      </a>
+                      <!-- Ce formulaire permet d'appeler la servlet Accueil avant d'aller sur compte -> vérification du log de l'utilisateur  -->
+                      <form action="../../VerificationConnexion" method="get" id="formCompte" >
+                      </form>
+                  </li>
+                  <li class="sub-menu">
+                      <a href="javascript:;" >
+                          <i class="fa fa-cogs"></i>
+                          <span>Autres</span>
+                          <i class="fa fa-chevron-down pull-right"></i>
+                      </a>
+                      <ul class="sub">
+                          <li><a href="../Divers/aide.html">Aide</a></li>
+                          <li><a href="../Divers/contact.html">Contact</a></li>
+                          <li><a href="../Divers/conviction.html">Nos convictions</a></li>
+                          <li><a href="../Admin/loginAdmin.html">Administrateur</a></li>
+                      </ul>
+                  </li>                 
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+		
+	  <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->  
+	    <section id="main-content">
+	        <section class="wrapper">
+	        	<div class="row" style="padding: 15px;">
+	   <!-- **********************************************************************************************************************************************************
+		Debut du code interessant
+      *********************************************************************************************************************************************************** -->  
+		
+				<div id="activites">
+				</div>
+			
+				<div class='col-lg-6 col-md-6 col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> <i class="fa fa-shopping-cart"></i> Gérer sa liste de course et repérer les produits</h2>
+						<p class='text-justify'>Afin de mieux maîtriser ton budget, il faut prévoir ce que tu vas manger et faire une listeen conséquence</p>
+						<p class='text-justify'>Il faut repérer les prix afin d'avoir le meilleur rapport qualité/prix</p>
+						<p class='text-justify'><i class="fa fa-warning"></i> Il est indispensable de comparer les prix au kilo/litre/à la pièce</p>
+						<p class='text-justify'><i class="fa fa-warning"></i> Attention aux articles en promotion qu'il ne soit pas plus cher</p>
+						<p class='text-justify'>Ne pas gaspiller surtout si tu as tendance à acheter en grosse quantité</p>	
+					</div>
+				</div>
+			
+				<div class='col-lg-6 col-md-6 col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Conseils pour une alimentation saine</h2>
+						<p class='text-justify'> Manger 3 laitages par jour</p>
+						<p class='text-justify'> 3 fruits ou salade/crudité + 1 portion de légumes cuits par jour</p>
+						<p class='text-justify'>3 portions de viande rouge par semaine et 2 portions de poisson</p>
+						<p class='text-justify'>Un peu de matières grasses crues (beurre)</p>
+						<p class='text-justify'>Des féculents: pain, riz, pâtes, pomme de terre, légumes secs</p>	
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Petit déjeuner idéal</h2>
+						<p class='text-justify'> 1 produit laitier + 2 tartines beurrés + 1 portion de fruit/compote</p>
+						<h2>Goûter idéal</h2>
+						<p class='text-justify'>1 verre d'eau, produit laitier + 1 gâteau et une portion de fruit/compote</p>	
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Produits de base du placard</h2>
+						<p class='text-justify'>Sucre, farine</p>
+						<p class='text-justify'>Riz, pâtes, pomme de terre</p>
+						<p class='text-justify'>Céréales: semoule, polenta, quinoa, boulgour</p>
+						<p class='text-justify'>Légumes secs: lentilles vertes, fèves</p>
+						<p class='text-justify'>Huile d'olive et d'arachide, vinaigre</p>	
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Produits de base Petit déjeuner/Goûter</h2>
+						<p class='text-justify'>Boisson: Thé, café, tisanes, lait, cacao en poudre</p>
+						<p class='text-justify'>Céréales</p>
+						<p class='text-justify'>Confiture, pâte à tartiner, miel</p>
+						<p class='text-justify'>Biscottes, pain de mie, pain</p>	
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Produits de base d'asaisonnement</h2>
+						<p class='text-justify'>Epices: cumin, cannelle curry, piment, paprika, gingembre</p>
+						<p class='text-justify'>Herbes: herbes de provence, thym, romarin, persil, aneth, laurier</p>
+						<p class='text-justify'>Cornichons, olives, tabasco, sauce soja, concentré de tomates, bouillon de légumes</p>
+						<p class='text-justify'>Sel fin, gros sel, poivre</p>	
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Produits en conserve</h2>
+						<p class='text-justify'>Légumes: tomates, haricots, petit pois, carottes, macédoine</p>
+						<p class='text-justify'>Poissons: sardines, thon, maquereau</p>
+						<p class='text-justify'>Soupes</p>
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Ingrédients du réfrigérateur</h2>
+						<p class='text-justify'>Légumes et fruits frais</p>
+						<p class='text-justify'>Lait, crème fraîche, yaourt, fromage, beurre</p>
+						<p class='text-justify'>Oeufs, jambon, viande et volaille</p>
+						<p class='text-justify'>Condiments: moutarde, mayonnaise, ketchup</p>
+						<p class='text-justify'>Jus de fruits, compote</p>
+					</div>
+				</div>
+				
+				<div class='col-lg-6 col-md- col-sm-6 mb'>
+					<div class='product-panel-2 pn' style='padding: 5px;'>
+						<h2> Ingrédients du congélateur</h2>
+						<p class='text-justify'>Gruyère râpé</p>
+						<p class='text-justify'>Pizza, quiche</p>
+						<p class='text-justify'>Steack haché, poisson pané</p>
+						<p class='text-justify'>Légumes surgelés, frites surgelés</p>
+						<p class='text-justify'>Pain tranché</p>
+					</div>
+				</div>
+	
+		  <!-- **********************************************************************************************************************************************************
+		Fin du code interessant
+      *********************************************************************************************************************************************************** -->  			
+	        	</div>
+			</section>
+		</section>
+	
+		<div class="site-footer">
+	         <div class="text-center">
+	              Copyright &copy; 2014 CABROL-HU-JUAN-ONDE | Now What To Do
+	             <a href="#main-content" class="go-top">
+	                 <i class="fa fa-angle-up"></i>
+	             </a>
+	         </div>
+	     </div>   
+	</section>
+	
+	<!-- js placed at the end of the document so the pages load faster -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-1.8.3.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="../../js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="../../js/jquery.scrollTo.min.js"></script>
+    <script src="../../js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="../../js/jquery.sparkline.js"></script>
+
+    <!--common script for all pages-->
+    <script src="../../js/common-scripts.js"></script>
+    <script src="../../js/script/loginBisScript.js"></script>        
+    <script type="text/javascript">
+    	//Cette fonction envoie le formulaire pour appeler la servlet Compte avant d'aller sur compte -> vérification du log de l'utilisateur 
+    	function cheatAppelCompteServlet()
+    	{
+    		document.getElementById("formCompte").submit();
+    	}
+    	
+    	//Appelle la Servlet loginBis pour deconnecter l'utilisateur
+    	function cheatDeconnexion()
+    	{
+    		document.getElementById("formDeconnexion").submit();
+    	}
+    	
+    	//Verifie le log pour le menu et le bouton connexion/deconnexion
+    	afficherConnexionDeconnexion();
+    </script>
+    
+    <script src="../../js/script/activiteScript.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			recupererActivite("alimentation", $("#activites"));
+		});
+	</script>	
+</body>
+</html>
